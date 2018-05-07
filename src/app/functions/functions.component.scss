@@ -5,26 +5,20 @@
 .col {
    padding: .4em 1.3em;
 }
-.color-dark {
-    background: #2885C4;
-}
-.color-light {
-    background: #57B3F1;
-}
 
 .color-dark {
-    background: #2885C4;
+    background: #52658f;
 }
 
 .color-light {
-    background: #AED6F1;
+    background: #f7f5e6;
 }
 
 
 .function-container {
-    background:#3FA0E1;
+    background:#52658f;
     font-size: 14px;
-    color: white;
+    color: #f7f5e6;
     padding: .5em 1.3em;
     font-weight:bold;
     cursor:pointer;
@@ -37,13 +31,14 @@
 }
 
 .functions {
-    background:#3FA0E1;
+    background:#f7f5e6;
     font-weight:bold;
+    color: #f7f5e6;
 }
 
 .selected-container {
-    background:#A569BD;
-    color: white;
+    background:#8030a0;
+    color: #f7f5e6;
     padding: .5em 1.3em;
     cursor:pointer;
     font-weight:bold;
@@ -51,38 +46,36 @@
 }
 
 .keymetric {
-    color: #F7DC6F;
+    color: #f7f5e6;
     font-size: 14px;
     font-weight:bold;
-
 }
 
 
 
 @media only screen and (max-width: 480px) {
-    
     .container {
         display: grid;
         grid-template-columns: 50% auto;
     }
     .col {
-        padding: .4em 1.0em;
+       padding: .4em 1.3em;
     }
     
     .color-dark {
-        background: #2885C4;
-    }
-
-    .color-light {
-        background: #AED6F1;
+        background: #52658f;
     }
     
-   /* 
+    .color-light {
+        background: #f7f5e6;
+    }
+    
+    
     .function-container {
-        background:#3FA0E1;
-        font-size: 12px;
-        color: white;
-        padding: .2em .4em;
+        background:#52658f;
+        font-size: 14px;
+        color: #f7f5e6;
+        padding: .5em 1.3em;
         font-weight:bold;
         cursor:pointer;
         font-family: 'Raleway', 'Arial';
@@ -90,29 +83,28 @@
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin: 3px 1px;
+        margin: 6px 3px;
     }
     
     .functions {
-        background:#3FA0E1;
+        background:#ac8e72;
         font-weight:bold;
+        color: #f7f5e6;
     }
     
     .selected-container {
-        background:#A569BD;
-        color: white;
-      
-        padding: .2em .4em;
-        font-weight:bold;
+        background:#8030a0;
+        color: #f7f5e6;
+        padding: .5em 1.3em;
         cursor:pointer;
+        font-weight:bold;
        
     }
-    */
+    
     .keymetric {
-        color: #F7DC6F;
-        font: #A569BD;
-        font-size: 12px;
-        font-weight: bold;
+        color: #f7f5e6;
+        font-size: 14px;
+        font-weight:bold;
     }
     
 }

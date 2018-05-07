@@ -1,7 +1,8 @@
-.bigblock {
-    font-size: 4em;
-    font-weight: bolder;
-    color: slateblue;
+h1 {
+    font-size: 400%;
+    font-weight: bold;
+    color: #333a56;
+    text-align: center;
 }
 
 .center {
@@ -10,3 +11,39 @@
     margin-right: auto;
     width: 50%;
 }
+
+.allcolor {
+    color: #333a56;
+}
+
+
+
+ol li { 
+    list-style-type: square;
+}
+
+mat-expansion-panel, mat-panel-title {
+    background-color: #333a56;
+    color: #ECF0F1;
+    font-family: 'Raleway', 'Arial';
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 200%;
+        font-weight: bold;
+        color: #333a56;
+        text-align: center;
+    }
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+}
+
