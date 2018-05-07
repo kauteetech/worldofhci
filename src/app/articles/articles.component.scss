@@ -1,0 +1,27 @@
+.functionsdata {
+    display: list-item; 
+}
+
+mat-card {
+    margin-top: 20px;
+    background-color: #7D3C98;
+    color: #ECF0F1;
+    font-family: 'Raleway', 'Arial';
+    list-style-type: none;
+    font-weight: inherit;
+}
+
+ol li { 
+    list-style-type: square;
+}
+
+mat-expansion-panel, mat-panel-title {
+    background-color: rgb(174, 113, 201);
+    color: #ECF0F1;
+    font-family: 'Raleway', 'Arial';
+
+}
+
+mat-panel-title {
+    font-weight: bold;
+}

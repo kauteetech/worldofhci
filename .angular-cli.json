@@ -9,7 +9,11 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "data",
+        { "glob": "package.json", "input": "../", "output": "./assets/" },
+        { "glob": "vendordata.json", "input": "./", "output": "./assets/" },
+        { "glob": "hcifunctiondata.json", "input": "./", "output": "./assets/" }
       ],
       "index": "index.html",
       "main": "main.ts",

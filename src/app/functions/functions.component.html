@@ -1,0 +1,114 @@
+
+<div class="container color-dark">
+  
+  <div class="col">
+    <p>Select Data Center Functions for HCI </p> 
+  </div>
+  
+  <div class="col">  
+    <p>Total Selected ( {{ ajaxfunction.addCount }} ) -- click on the item to remove </p> 
+  </div>
+</div>
+
+<div class="container color-light">
+    <div class="col">   
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Analysts Data']" class="function-container keymetric"  (click)="addFunction('Analysts Data');"> 	Analysts Data	</button> 
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Customer Adoption']" class="function-container keymetric"  (click)="addFunction('Customer Adoption');"> 	Customer Adoption	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Choice of Hardware']" class="function-container keymetric"  (click)="addFunction('Choice of Hardware');"> 	Choice of Hardware	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Disaster Recovery']" class="function-container keymetric"  (click)="addFunction('Disaster Recovery');"> 	Disaster Recovery 	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Data Protection']" class="function-container keymetric"  (click)="addFunction('Data Protection');"> 	Data Protection	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Hardware Agnostic']" class="function-container keymetric"  (click)="addFunction('Hardware Agnostic');"> 	Hardware Agnostic	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Scalability']" class="function-container keymetric"  (click)="addFunction('HCI Scalability');"> 	HCI Scalability	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI in Public Cloud']" class="function-container keymetric"  (click)="addFunction('HCI in Public Cloud');"> 	HCI in Public Cloud	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Licensing Flexibility']" class="function-container keymetric"  (click)="addFunction('Licensing Flexibility');"> 	Licensing Flexibility	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Micro-Segmentation']" class="function-container keymetric"  (click)="addFunction('Micro-Segmentation');"> 	Micro-Segmentation	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Multi Hypervisor Support']" class="function-container keymetric"  (click)="addFunction('Multi Hypervisor Support');"> 	Multi Hypervisor Support	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['NPS Score']" class="function-container keymetric"  (click)="addFunction('NPS Score');"> 	NPS Score	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['ROBO Friendly']" class="function-container keymetric"  (click)="addFunction('ROBO Friendly');"> 	ROBO Friendly	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Data Center']" class="function-container keymetric"  (click)="addFunction('Software Defined Data Center');"> 	Software Defined Data Center	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Storage']" class="function-container keymetric"  (click)="addFunction('Software Defined Storage');"> 	Software Defined Storage	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Network']" class="function-container keymetric"  (click)="addFunction('Software Defined Network');"> 	Software Defined Network	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Compute']" class="function-container keymetric"  (click)="addFunction('Software Defined Compute');"> 	Software Defined Compute	</button>
+     
+    <!-- 
+
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Automation']" class="function-container keymetric"  (click)="addFunction('HCI Automation');"> 	HCI Automation	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Security']" class="function-container keymetric"  (click)="addFunction('Software Defined Security');"> 	Software Defined Security	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined WAN']" class="function-container keymetric"  (click)="addFunction('Software Defined WAN');"> 	Software Defined WAN	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Monitoring Analytics']" class="function-container keymetric"  (click)="addFunction('HCI Monitoring Analytics');"> 	HCI Monitoring Analytics	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Log Analytics']" class="function-container keymetric"  (click)="addFunction('HCI Log Analytics');"> 	HCI Log Analytics	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['DR Automation']" class="function-container keymetric"  (click)="addFunction('DR Automation');"> 	DR Automation	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Customer Experience']" class="function-container keymetric"  (click)="addFunction('Customer Experience');"> 	Customer Experience	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Near DR']" class="function-container keymetric"  (click)="addFunction('Near DR');"> 	Near DR	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Solution Offering']" class="function-container keymetric"  (click)="addFunction('Solution Offering');"> 	Solution Offering	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Ease of Operations']" class="function-container keymetric"  (click)="addFunction('Ease of Operations');"> 	Ease of Operations	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Support for Containers']" class="function-container keymetric"  (click)="addFunction('Support for Containers');"> 	Support for Containers	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Vision']" class="function-container keymetric"  (click)="addFunction('HCI Vision');"> 	HCI Vision	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['VDI Support']" class="function-container keymetric"  (click)="addFunction('VDI Support');"> 	VDI Support	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Integration with Existing Solution']" class="function-container keymetric"  (click)="addFunction('Integration with Existing Solution');"> 	Integration with Existing Solution	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Partners Solution Integration']" class="function-container keymetric"  (click)="addFunction('Partners Solution Integration');"> 	Partners Solution Integration	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Hypervisor']" class="function-container keymetric"  (click)="addFunction('Hypervisor');"> 	Hypervisor	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Cloud Management Platform']" class="function-container keymetric"  (click)="addFunction('Cloud Management Platform');"> 	Cloud Management Platform	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Customer Support']" class="function-container keymetric"  (click)="addFunction('Customer Support');"> 	Customer Support	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Management']" class="function-container keymetric"  (click)="addFunction('HCI Management');"> 	HCI Management	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Day One Hardware Support']" class="function-container keymetric"  (click)="addFunction('Day One Hardware Support');"> 	Day One Hardware Support	</button>
+    -->    
+
+
+
+    </div>
+
+
+    <div class="col">   
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Analysts Data']" class="function-container  selected-container keymetric"  (click)="removeFunction('Analysts Data');"> 	Analysts Data	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Customer Adoption']" class="function-container  selected-container keymetric"   (click)="removeFunction('Customer Adoption');"> 	Customer Adoption	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Data Center']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Data Center');"> 	Software Defined Data Center	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Storage']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Storage');"> 	Software Defined Storage	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Network']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Network');"> 	Software Defined Network	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Compute']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Compute');"> 	Software Defined Compute	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Micro-Segmentation']" class="function-container  selected-container keymetric"   (click)="removeFunction('Micro-Segmentation');"> 	Micro-Segmentation	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Disaster Recovery']" class="function-container  selected-container keymetric"   (click)="removeFunction('Disaster Recovery');"> 	Disaster Recovery 	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Data Protection']" class="function-container  selected-container keymetric"   (click)="removeFunction('Data Protection');"> 	Data Protection	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Multi Hypervisor Support']" class="function-container  selected-container keymetric"   (click)="removeFunction('Multi Hypervisor Support');"> 	Multi Hypervisor Support	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['ROBO Friendly']" class="function-container  selected-container keymetric"   (click)="removeFunction('ROBO Friendly');"> 	ROBO Friendly	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Hardware Agnostic']" class="function-container  selected-container keymetric"   (click)="removeFunction('Hardware Agnostic');"> 	Hardware Agnostic	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Choice of Hardware']" class="function-container  selected-container keymetric"   (click)="removeFunction('Choice of Hardware');"> 	Choice of Hardware	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI in Public Cloud']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI in Public Cloud');"> 	HCI in Public Cloud	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Scalability']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Scalability');"> 	HCI Scalability	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Licensing Flexibility']" class="function-container  selected-container keymetric"   (click)="removeFunction('Licensing Flexibility');"> 	Licensing Flexibility	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['NPS Score']" class="function-container  selected-container keymetric"   (click)="removeFunction('NPS Score');"> 	NPS Score	</button>
+
+        
+      <!--
+        
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Customer Experience']" class="function-container  selected-container keymetric"   (click)="removeFunction('Customer Experience');"> 	Customer Experience	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Near DR']" class="function-container  selected-container keymetric"   (click)="removeFunction('Near DR');"> 	Near DR	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Solution Offering']" class="function-container  selected-container keymetric"   (click)="removeFunction('Solution Offering');"> 	Solution Offering	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Ease of Operations']" class="function-container  selected-container keymetric"   (click)="removeFunction('Ease of Operations');"> 	Ease of Operations	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Support for Containers']" class="function-container  selected-container keymetric"   (click)="removeFunction('Support for Containers');"> 	Support for Containers	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Integration with Existing Solution']" class="function-container  selected-container keymetric"   (click)="removeFunction('Integration with Existing Solution');"> 	Integration with Existing Solution	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Partners Solution Integration']" class="function-container  selected-container keymetric"   (click)="removeFunction('Partners Solution Integration');"> 	Partners Solution Integration	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Hypervisor']" class="function-container  selected-container keymetric"   (click)="removeFunction('Hypervisor');"> 	Hypervisor	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Cloud Management Platform']" class="function-container  selected-container keymetric"   (click)="removeFunction('Cloud Management Platform');"> 	Cloud Management Platform	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Customer Support']" class="function-container  selected-container keymetric"   (click)="removeFunction('Customer Support');"> 	Customer Support	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Management']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Management');"> 	HCI Management	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Day One Hardware Support']" class="function-container  selected-container keymetric"   (click)="removeFunction('Day One Hardware Support');"> 	Day One Hardware Support	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['DR Automation']" class="function-container  selected-container keymetric"   (click)="removeFunction('DR Automation');"> 	DR Automation	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Automation']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Automation');"> 	HCI Automation	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Security']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Security');"> 	Software Defined Security	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined WAN']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined WAN');"> 	Software Defined WAN	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Monitoring Analytics']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Monitoring Analytics');"> 	HCI Monitoring Analytics	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Log Analytics']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Log Analytics');"> 	HCI Log Analytics	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['HCI Vision']" class="function-container  selected-container keymetric"   (click)="removeFunction('HCI Vision');"> 	HCI Vision	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['VDI Support']" class="function-container  selected-container keymetric"   (click)="removeFunction('VDI Support');"> 	VDI Support	</button>
+      
+      
+      -->   
+
+
+
+    </div>
+
+</div>
+
+

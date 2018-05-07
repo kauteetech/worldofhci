@@ -1,1 +1,120 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css'; 
+
+@import url('https:////fonts.googleapis.com/css?family=Raleway:300,700');
+
+input[type=checkbox] {
+    display: none;
+  }
+
+body {
+    background:#2E9CE6;
+    padding: 3em;
+    font-family: 'Raleway', 'Arial';
+    color:#fff;
+}
+ul {
+    list-style-type:none;
+    margin:0em 0 2em 0;
+    padding:0;
+}
+ul li {
+    display:inline;
+    margin-right: 30px;
+}
+ul li a {
+    font-size: 1.5em;
+}
+a {
+    color:#fff;
+    text-decoration:none;
+}
+////
+
+
+@media only screen and (max-width: 680px) {
+    
+    body {
+        background:#2E9CE6;
+        padding: .5em;
+        font-family: 'Raleway', 'Arial';
+        color:rgba(245, 241, 241, 0.986);
+    }
+    ul {
+        list-style-type:none;
+        margin:0 0 1em 0;
+        padding:0;
+    }
+    ul li {
+        display:inline;
+        margin-right: 15px;
+      
+    }
+    ul li a {
+        font-size: 1.5em;
+    }
+    a {
+        color:rgba(245, 241, 241, 0.986);
+        text-decoration:none;
+    }
+  }
+
+
+
+
+  @media only screen and (max-width: 767px) {
+    
+    body {
+        background:rgba(35, 135, 202, 0.87);
+        padding: 2em;
+        font-family: 'Raleway', 'Arial';
+        color:rgba(245, 241, 241, 0.986);
+    }
+    ul {
+        list-style-type:none;
+        margin:0 0 1.5em 0;
+        padding:0;
+    }
+    ul li {
+        display:inline;
+        margin-right: 25px;
+    }
+    ul li a {
+        font-size: 1.5em;
+    }
+    a {
+        color:rgba(245, 241, 241, 0.986);
+        text-decoration:none;
+    }
+  }
+
+
+
+
+
+  @media only screen and (min-width: 768px) and (max-width: 979px) {
+    
+    body {
+        background:rgba(35, 135, 202, 0.87);
+        padding: 2em;
+        font-family: 'Raleway', 'Arial';
+        color:rgba(245, 241, 241, 0.986);
+    }
+    ul {
+        list-style-type:none;
+        margin:0 0 1.5em 0;
+        padding:0;
+    }
+    ul li {
+        display:inline;
+        margin-right: 25px;
+    }
+    ul li a {
+        font-size: 1.5em;
+    }
+    a {
+        color:rgba(245, 241, 241, 0.986);
+        text-decoration:none;
+    }
+  }
