@@ -4,5 +4,27 @@ p {
 
 img {
     align-content: left;
-    size: 100px
+    padding: 15px;
+}
+
+.content {
+    width: 1000px;
+}
+
+.element{
+  shape-image-threshold: 1;
+  float: left;
+  margin-left: 10px;
+  
+}
+
+@media only screen and (max-width: 480px) {
+    .element {
+         shape-image-threshold: 1;
+         float: none;
+       }
+    
+    img {
+        align-items: center;
+    }
 }

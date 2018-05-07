@@ -24,10 +24,15 @@ ol li {
 
 mat-expansion-panel, mat-panel-title {
     background-color: #333a56;
-    color: #ECF0F1;
+    color: #e8e8e8;
     font-family: 'Raleway', 'Arial';
 
 }
+
+mat-card {
+    background: #e8e8e8;
+}
+
 
 @media only screen and (max-width: 480px) {
 
