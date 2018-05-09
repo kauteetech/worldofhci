@@ -14,6 +14,7 @@
     <div class="col">   
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Analysts Data']" class="function-container keymetric"  (click)="addFunction('Analysts Data');"> 	Analysts Data	</button> 
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Customer Adoption']" class="function-container keymetric"  (click)="addFunction('Customer Adoption');"> 	Customer Adoption	</button>
+      <button class="button" *ngIf="!ajaxfunction.avlFunction['Customer Support']" class="function-container keymetric"  (click)="addFunction('Customer Support');"> 	Customer Support	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Choice of Hardware']" class="function-container keymetric"  (click)="addFunction('Choice of Hardware');"> 	Choice of Hardware	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Disaster Recovery']" class="function-container keymetric"  (click)="addFunction('Disaster Recovery');"> 	Disaster Recovery 	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Data Protection']" class="function-container keymetric"  (click)="addFunction('Data Protection');"> 	Data Protection	</button>
@@ -29,8 +30,8 @@
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Storage']" class="function-container keymetric"  (click)="addFunction('Software Defined Storage');"> 	Software Defined Storage	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Network']" class="function-container keymetric"  (click)="addFunction('Software Defined Network');"> 	Software Defined Network	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Compute']" class="function-container keymetric"  (click)="addFunction('Software Defined Compute');"> 	Software Defined Compute	</button>
-     
-    <!-- 
+
+  <!-- 
 
       <button class="button" *ngIf="!ajaxfunction.avlFunction['HCI Automation']" class="function-container keymetric"  (click)="addFunction('HCI Automation');"> 	HCI Automation	</button>
       <button class="button" *ngIf="!ajaxfunction.avlFunction['Software Defined Security']" class="function-container keymetric"  (click)="addFunction('Software Defined Security');"> 	Software Defined Security	</button>
@@ -62,6 +63,7 @@
     <div class="col">   
         <button class="button" *ngIf="!ajaxfunction.selFunction['Analysts Data']" class="function-container  selected-container keymetric"  (click)="removeFunction('Analysts Data');"> 	Analysts Data	</button>
         <button class="button" *ngIf="!ajaxfunction.selFunction['Customer Adoption']" class="function-container  selected-container keymetric"   (click)="removeFunction('Customer Adoption');"> 	Customer Adoption	</button>
+        <button class="button" *ngIf="!ajaxfunction.selFunction['Customer Support']" class="function-container  selected-container keymetric"   (click)="removeFunction('Customer Support');"> 	Customer Support	</button>
         <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Data Center']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Data Center');"> 	Software Defined Data Center	</button>
         <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Storage']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Storage');"> 	Software Defined Storage	</button>
         <button class="button" *ngIf="!ajaxfunction.selFunction['Software Defined Network']" class="function-container  selected-container keymetric"   (click)="removeFunction('Software Defined Network');"> 	Software Defined Network	</button>

@@ -1,4 +1,5 @@
 
+<br>
 <div class="container color-dark">
   <div class="col">
     <p>Select your HCI vendors</p>
@@ -12,13 +13,13 @@
   
         <div class="col">   
             <button class="button" *ngIf="!ajaxvendor.avlVendor['Cisco HyperFlex']" class="vendor-container keymetric"  (click)="addVendor('Cisco HyperFlex'); "> 	Cisco HyperFlex 	</button>
-            <button class="button" *ngIf="!ajaxvendor.avlVendor['HPE Simplivity']" class="vendor-container keymetric"  (click)="addVendor('HPE Simplivity');"> 	HPE Simplivity </button>
-            <button class="button" *ngIf="!ajaxvendor.avlVendor['Dell EMC VxRAIL']" class="vendor-container keymetric"  (click)="addVendor('Dell EMC VxRAIL');"> 	Dell EMC VxRAIL	</button>
+            <button class="button" *ngIf="!ajaxvendor.avlVendor['HPE Simplivity']" class="vendor-container keymetric" matTooltip="with VMware Stack"  (click)="addVendor('HPE Simplivity');"> 	HPE Simplivity </button>
+            <button class="button" *ngIf="!ajaxvendor.avlVendor['Dell EMC VxRAIL']" class="vendor-container keymetric" matTooltip="with VMware Stack"  (click)="addVendor('Dell EMC VxRAIL');"> 	Dell EMC VxRAIL	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['Nutanix']" class="vendor-container keymetric"  (click)="addVendor('Nutanix');"> 	Nutanix	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['VMware VSAN']" class="vendor-container keymetric"  (click)="addVendor('VMware VSAN');"> 	VMware VSAN	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['Scale Computing']" class="vendor-container keymetric"  (click)="addVendor('Scale Computing');"> 	Scale Computing	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['Pivot3 Acuity']" class="vendor-container keymetric"  (click)="addVendor('Pivot3 Acuity');"> 	Pivot3 Acuity	</button>
-            <button class="button" *ngIf="!ajaxvendor.avlVendor['NetApp']" class="vendor-container keymetric"  (click)="addVendor('NetApp');"> 	NetApp Solidfire	</button>
+            <button class="button" *ngIf="!ajaxvendor.avlVendor['NetApp']" class="vendor-container keymetric" matTooltip="with VMware Stack" (click)="addVendor('NetApp');"> 	NetApp Solidfire	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['Huawei FusionCube']" class="vendor-container keymetric"  (click)="addVendor('Huawei FusionCube');"> 	Huawei FusionCube	</button>
             <button class="button" *ngIf="!ajaxvendor.avlVendor['DataCore Virtual SAN']" class="vendor-container keymetric"  (click)="addVendor('DataCore Virtual SAN');"> 	DataCore Virtual SAN	</button>
         </div>
@@ -26,13 +27,13 @@
  
         <div class="col">   
             <button class="button" *ngIf="!ajaxvendor.selVendor['Cisco HyperFlex']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Cisco HyperFlex');"> 	Cisco HyperFlex	   <br> {{ cisValue() | number:'1.2-2' }} </button>
-            <button class="button" *ngIf="!ajaxvendor.selVendor['HPE Simplivity']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('HPE Simplivity');"> 	HPE Simplivity  	   <br>  {{ hpeValue() | number:'1.2-2' }}	</button>
-            <button class="button" *ngIf="!ajaxvendor.selVendor['Dell EMC VxRAIL']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Dell EMC VxRAIL');"> 	Dell EMC VxRAIL 	 <br> {{ delValue() | number:'1.2-2' }}		 </button>
+            <button class="button" *ngIf="!ajaxvendor.selVendor['HPE Simplivity']" class="vendor-container selected-vendor keymetric" matTooltip="with VMware Stack"  (click)="removeVendor('HPE Simplivity');"> 	HPE Simplivity  	   <br>  {{ hpeValue() | number:'1.2-2' }}	</button>
+            <button class="button" *ngIf="!ajaxvendor.selVendor['Dell EMC VxRAIL']" class="vendor-container selected-vendor keymetric" matTooltip="with VMware Stack" (click)="removeVendor('Dell EMC VxRAIL');"> 	Dell EMC VxRAIL 	 <br> {{ delValue() | number:'1.2-2' }}		 </button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['Nutanix']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Nutanix');"> 	Nutanix 	 <br> {{ nutValue() | number:'1.2-2' }}	 </button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['VMware VSAN']" class="vendor-container  selected-vendor keymetric"  (click)="removeVendor('VMware VSAN');"> 	VMware VSAN 	 <br> {{ vmwValue() | number:'1.2-2' }} </button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['Scale Computing']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Scale Computing');"> 	Scale Computing	  	<br>  {{ scaValue()  | number:'1.2-2' }}	</button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['Pivot3 Acuity']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Pivot3 Acuity');"> 	Pivot3 Acuity		 <br>  {{ pivValue() | number:'1.2-2' }}	 </button>
-            <button class="button" *ngIf="!ajaxvendor.selVendor['NetApp']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('NetApp');"> NetApp Solidfire 	 <br> {{ netValue() | number:'1.2-2' }}	</button>
+            <button class="button" *ngIf="!ajaxvendor.selVendor['NetApp']" class="vendor-container selected-vendor keymetric" matTooltip="with VMware Stack"  (click)="removeVendor('NetApp');"> NetApp Solidfire 	 <br> {{ netValue() | number:'1.2-2' }}	</button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['Huawei FusionCube']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('Huawei FusionCube');"> 	Huawei FusionCube 	 <br> {{ huaValue() | number:'1.2-2' }}		</button>
             <button class="button" *ngIf="!ajaxvendor.selVendor['DataCore Virtual SAN']" class="vendor-container selected-vendor keymetric"  (click)="removeVendor('DataCore Virtual SAN');"> 	DataCore Virtual SAN   	 <br>  {{ datValue() | number:'1.2-2' }}		</button>
         </div>  

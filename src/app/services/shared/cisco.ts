@@ -34,7 +34,7 @@ hcifunction = [
                         "Multi Hypervisor Support":1,
                         "Hypervisor":0,
                         "Cloud Management Platform":0,
-                        "Customer Support":0,
+                        "Customer Support":2,
                         "HCI Management":0,
                         "Day One Hardware Support":0,
                         "ROBO Friendly":0,

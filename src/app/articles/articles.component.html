@@ -1,4 +1,4 @@
-
+<br>
 <div>
     <mat-accordion>
       
@@ -11,21 +11,22 @@
           <mat-panel-description>
             <mat-card>
                 
-                Gartner and IDC reports are considered for this data point. Gartner - Vendors across different Gartner's Magic Quadrants are assigned with points ranging from 1 to 4 points.
+                Gartner and IDC reports are considered as data input for this data point. 
+                Gartner Report - The Vendors from different Gartner's Magic Quadrants are assigned with points ranging from 1 to 4 points based on their position in the Magic Quadrant.
                 <br>
                 <ol>
-                  <li> Leaders Quadrant awarded with 4 points </li>
-                  <li> Challengers Quadrant awarded with 3 points</li>
-                  <li> Visionaries Quadrant awarded with 2 points</li>
-                  <li> Niche players Quadrant awarded with 1 points</li> 
+                  <li> Vendors in Leaders Quadrant are awarded with 4 points </li>
+                  <li> Vendors in Challengers Quadrant are awarded with 3 points</li>
+                  <li> Vendors in Visionaries Quadrant are awarded with 2 points</li>
+                  <li> Vendors in Niche players Quadrant are awarded with 1 points</li> 
                 </ol> 
            
-                IDC 2018 Report used – Points to vendors are provided based on Worldwide Hyper-Converged Systems, Based on Owner of HCI Software – top vendor 2point to .5 point for the first 4 vendors 
+                IDC 2018 Report – Points to vendors are provided based on Worldwide Hyper-Converged Systems, Based on Owner of HCI Software – top vendor awarded with 4 points and last vendor with 1 point for the first 4 vendors 
                 <ol>
-                  <li> Vendor with highest market share will be awarded with 4 points </li>
-                  <li> Vendor with second highest market share will be awarded with 3 points </li>
-                  <li> Vendor with third highest market share will be awarded with 2 points </li>
-                  <li> Vendor with fourth highest market share will be awarded with 1 points </li>
+                  <li> Vendor with highest market share is awarded with 4 points </li>
+                  <li> Vendor with second highest market share is awarded with 3 points </li>
+                  <li> Vendor with third highest market share is awarded with 2 points </li>
+                  <li> Vendor with fourth highest market share is awarded with 1 points </li>
                 </ol>
                       
             </mat-card>  
@@ -41,8 +42,8 @@
           </mat-expansion-panel-header>  
             <mat-panel-description>
               <mat-card>
-                Inputs from vendors sites, blogs and Analysts report were used to get the information on total customer base. This Customer base information is updated on a quarterly basis for most of the vendors.
-                Customer count with respective points are allocated as below <br>
+                The data for this function are collected from vendors sites, blogs and Analysts reports. I have a plan to update the Customer base information on quarterly basis.
+                Customer count with respective points are allocated <br>
                 <ol>
                   <li> Vendors with customers upto 5000 will be awarded with 1 point </li> 
                   <li> Vendors with customers upto 10000 will be awarded with 2 points </li>
@@ -54,6 +55,29 @@
             </mat-panel-description>
         </mat-expansion-panel>
 
+
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                  Customer Support
+              </mat-panel-title>
+            </mat-expansion-panel-header>  
+              <mat-panel-description>
+                <mat-card>
+                    Customer support is one of the critical parameter for any solutions and HCI is no different. one of the key consideration I have considered is 
+                    around ease in locating information related to support. Each parameter is awarded with 1 point. <br>
+                  <ol>
+                      <li>1 hour or below response time mentioned in vendor Datasheet/Website</li>
+                      <li>Support for Telephone and Email response</li>
+                      <li>KB articles and Information on Web</li>
+                      <li>Inbuilt call home/ Phone home facility</li>
+                  </ol>  
+  
+                </mat-card>  
+              </mat-panel-description>
+          </mat-expansion-panel>
+
+
         <mat-expansion-panel>
             <mat-expansion-panel-header>
                 <mat-panel-title>
@@ -62,13 +86,13 @@
             </mat-expansion-panel-header>  
               <mat-panel-description>
                 <mat-card>
-                    HCI is all about running core data center services as software on any commodity hardware. The HCI vendor should be flexible to support as much as server platform out there.
-                    The points are based on number vendors and their server models an HCI vendor can support. More Vendors equals more points <br>
+                    HCI is all about running core data center services as software on any commodity x86 hardware. The HCI vendor should be capable to support as many server vendors as possible.
+                    The points are based on number vendors a HCI vendor can support. More Vendors equals more points <br>
                     <ol>
-                        <li> More than 15 Vendors awarded with 4 points	</li>
-                        <li> Upto than 10 Vendors awarded with 3 points	</li>
-                        <li> Upto 5 Vendors awarded with 2 points	</li>
-                        <li> Between 1 and 5 Vendors awarded with 1 points </li>
+                        <li> HCI vendors who support more than 15 Vendors awarded with 4 points	</li>
+                        <li> HCI vendors who support upto 10 Vendors awarded with 3 points	</li>
+                        <li> HCI vendors who support Upto 5 Vendors awarded with 2 points	</li>
+                        <li> HCI vendors who support between 1 and 5 Vendors awarded with 1 point </li>
                     </ol> 
   
                 </mat-card>  
@@ -88,10 +112,10 @@
                   despite significant disruptive events. This parameter in WoHCI focuses around RPO (Recovery Point Objective) of a given HCI solution along with other parameters. 
                   Each parameter awarded with 1 point.  <br>
                   <ol>
-                      <li>Support for native replication</li>
-                      <li>Support for RPO zero for Near DR</li>
-                      <li>Support for RPO 5 Minutes for Far DR</li>
-                      <li>Support for Asymmetric replication – with different infrastructure (x86 Hardware) between the sites</li>
+                      <li>HCI solution supporting native replication</li>
+                      <li>HCI solution supporting RPO zero for Near DR</li>
+                      <li>HCI solution supporting RPO 5 Minutes or less for Far DR</li>
+                      <li>HCI solution supporting disimilar x86 servers or server quantity between the sites</li>
                   </ol> 
 
               </mat-card>  
@@ -107,11 +131,11 @@
             <mat-panel-description>
               <mat-card>
                   Most of the Data protection technologies include BC/DR as part of Data protection strategy, while that may be correct from a wholistic approach. I have kept DR and Data protection
-                  solutions as separate parameters. In this section I want to only focus around Backup and Recovery. The idea is to get to know the native Data Protection capabilities of a particular HCI vendor. 
-                  Backup/Recovery perspective and from 3rd party specialist backup vendors. Each parameter is awarded with 1 point. <br>
+                  solutions as separate parameters. In this section I want to only focus around Backup and Recovery. The idea is to get to know the native Data Protection capabilities of a given HCI vendor. 
+                  Two key points are considered, each parameter is awarded with 1 point. <br>
                   <ol>
-                      <li>Native VM Backup / restore</li>
-                      <li>3rd party Data protection solution integration </li>
+                      <li>Native VM Backup / Restore</li>
+                      <li>3rd party Data protection - Solution Integration </li>
                   </ol> 
 
               </mat-card>  
@@ -153,10 +177,10 @@
 	                experience between their private HCI deployment and the one the user consumes from the public cloud. Parameters with points below. Each parameter is awarded with 1 point. <br>
                   <ol>
                       <li>Capability to use HCI in public and private cloud</li>
-                      <li>HCI on AWS</li>
-                      <li>HCI on Google Cloud Platform</li>
-                      <li>HCI on Azure Cloud</li>
-                      <li>HCI on any other public cloud / partner provider</li>
+                      <li>HCI solution running on AWS</li>
+                      <li>HCI solution running on Google Cloud Platform</li>
+                      <li>HCI solution running on Azure Cloud</li>
+                      <li>HCI solution running on any other public cloud / partner provider</li>
                   </ol> 
 
               </mat-card>  
@@ -177,13 +201,13 @@
 	                or horizontally or both depending upon the solutions they adopt. Also, it is always wise to start small and then scale over the period of time, since x86 hardware innovation cycles are shorter 
 	                and customer want have latest gears running in their data center. Each parameter is awarded with 1 point. <br>
                   <ol>
-                      <li>Ability to start with minimum 3 nodes</li>
-                      <li>Support for a maximum of 32 nodes or more per Cluster</li>
-                      <li>Support to add compute only nodes</li>
-                      <li>Support to add storage only nodes</li>
-                      <li>Support on existing x86 Hardware</li>
-                      <li>Support for mixing for server vendors/generation of servers</li>
-                      <li>Support for JBOD / existing storage</li>
+                      <li>HCI solution's ability to start with minimum 3 nodes</li>
+                      <li>HCI solution support for a maximum of 32 nodes or more per Cluster</li>
+                      <li>HCI solution support to add compute only nodes</li>
+                      <li>HCI solution support to add storage only nodes</li>
+                      <li>HCI solution support on existing x86 Hardware in data center</li>
+                      <li>HCI solution support for mixing for server vendors/generation of servers</li>
+                      <li>HCI solution support for JBOD / existing storage</li>
                   </ol> 
 
               </mat-card>  
@@ -203,11 +227,11 @@
                   The approach for this is based on how licenses from the HCI vendors are flexible and what choices of licensing are available, needless to say in a transperant way.
 	                Here are some of the parameters and every choice is awarded 1 point. <br>
                   <ol>
-                      <li>Support for perpetual licenses (use it on other hardware)</li>
+                      <li>Support for perpetual licenses (license not tied to appliance of hardware)</li>
                       <li>Appliance based license</li>
-                      <li>Support for processor based licenses</li>
-                      <li>Consumed capacity licenses</li>
-                      <li>VM based licenses</li>
+                      <li>Support for socket based licenses</li>
+                      <li>Support for consumed capacity licenses</li>
+                      <li>Support for VM based licenses</li>
                   </ol> 
 
               </mat-card>  
@@ -225,11 +249,11 @@
               <mat-card>
                   The need for consistent security for workloads running on HCI is critical in rapidly changing environment. Almost 80% of the traffic never leaves the data center.
                   While it is critical to give greater attention to the perimeter traffice, customers have realized the importance of security for traffic that are within datacenter, 
-                  this is because of the increasing number of attack that are initiated from with in datacenter. Here are the critical Micro-Segmentation parameters, each awarded with 1 point.  <br>
+                  this is because of the increasing number of attack that are initiated from with in datacenter. Following Micro-Segmentation parameters, each awarded with 1 point.  <br>
                   <ol>
-                      <li>Five tuple ruleset, property of a typical firewall rules</li>
-                      <li>Dynamic firewall rules using workload tags or contextual</li>
-                      <li>Redirection of network traffic for advanced security inspection also called as service chaining</li>
+                      <li>Support for Five tuple ruleset, property of a typical firewall rules</li>
+                      <li>Support for Dynamic firewall rules using workload tags or context based</li>
+                      <li>Support for redirection of network traffic for advanced security inspection also called as service chaining</li>
                       <li>Support for containers or cloud native applications</li>
                   </ol> 
 
@@ -273,10 +297,10 @@
                   not be helpful to really gauge the HCI solution and more over most of the vendors who have HCI solutions have a broader products and solutions portfolio. The industry considered are 
                   technology/software, consumer brands/electronics and computer/peripherals.  Below are the points for different range with respective points awarded. <br>
                   <ol>
-                      <li>NPS score 100 to 75 will be awarded with 4 points</li>
-                      <li>NPS score 75 to 50 will be awarded with 3 points</li>
-                      <li>NPS score 50 to 25 will be awarded with 2 points</li>
-                      <li>NPS score 25 to 1 will be awarded with 1 points</li>
+                      <li>Vendor with NPS score between 100 and 75 will be awarded with 4 points</li>
+                      <li>Vendor with NPS score between 75 and 50 will be awarded with 3 points</li>
+                      <li>Vendor with NPS score between 50 and 25 will be awarded with 2 points</li>
+                      <li>Vendor with NPS score between 25 and 1 will be awarded with 1 points</li>
                   </ol> 
 
               </mat-card>  
@@ -293,7 +317,7 @@
             <mat-panel-description>
               <mat-card>
                   This function is mainly focused around small/medium customer and customer who have remote offices/branch offices. The parameters used here are around 
-                  solutioning and licensing. While in future we may want to add more data points for ROBO, currently two important parameter are considered each with 1 point . <br>
+                  vendor solutions and licensing for customer ROBO requirements. While in future I would like to add more data points for ROBO, currently I have considered two parameters each with 1 point. <br>
                   <ol>
                       <li>Capability to run on 2 Nodes connected to Central Data Center</li>
                       <li>Licenses based on number of VM workloads regardless of server hardware quantity or storage capacity</li>
@@ -314,12 +338,12 @@
               <mat-card>
                   Points are given based vendor solutions offering across Software Defined Compute, Software Defined Network, Software Defined Storage and Software Defined Security functionalities.
                   The idea behind this parameter is to help customer in understanding the vendors investment into these solutions which form the base platform for their HCI adoption. 
-                  For each solution offering vendor will be granted with 1 point. The vendor who has the higher number of offerings will eventually get the highest score<br>
+                  For each solution offering vendor will be granted with 1 point. The vendor who has the higher number of offerings will eventually get the highest score. Each capability awarded with 1 point<br>
                   <ol>
-                    <li>Software Defined Compute 1 point awarded</li> 
-                    <li>Software Defined Network 1 point awarded</li> 
-                    <li>Software Defined Storage 1 point awarded </li> 
-                    <li>Software Defined Secuirty 1 point awarded</li> 
+                    <li>HCI vendors capability to provide Software Defined Compute</li> 
+                    <li>HCI vendors capability to provide Software Defined Network</li> 
+                    <li>HCI vendors capability to provide Software Defined Storage</li> 
+                    <li>HCI vendors capability to provide Software Defined Secuirty</li> 
                   </ol> 
 
               </mat-card>  
@@ -373,10 +397,10 @@
                   a subset or a single function of SDN. This parameter has datapoints for critical or core SDN functions which any HCI solution should have.
                   In the below list of capabilities each capability is awarded with 1 point. <br> 
                   <ol>
-                      <li>virtual switching</li>
-                      <li>virtual firewall</li>
-                      <li>virtual routing</li>
-                      <li>virtual load balancing</li>
+                      <li>HCI solution supporting virtual switching</li>
+                      <li>HCI solution supporting virtual firewall</li>
+                      <li>HCI solution supporting virtual routing</li>
+                      <li>HCI solution supporting virtual load balancing</li>
                       <li>Support for cloud native applications like containers</li>
                   </ol> 
 
@@ -393,14 +417,14 @@
           </mat-expansion-panel-header>  
             <mat-panel-description>
               <mat-card>
-                  This parameter is predominantly virtual infrastructure/hypervisor feature comparison around efficient usage of x86 hardware. In the current verison of WoHCI application 
-                  I measure below data points from manageability and availability of the Virtual infrastructure as a whole. So, in SDC I would measure capability to take care of planned, 
+                  This parameter is predominantly for virtual infrastructure/hypervisor feature comparison around efficient usage of x86 hardware. 
+                  In the current verison of WoHCI application capabilities around Availability and Resource load balancing are considered. So, in SDC I would measure capability to take care of planned, 
                   unplanned  downtimes. Apart from that I have also included managing resources in a dynamic way and the impact when handling the resources. Each data point awarded with one point <br>
                   <ol>
-                      <li>Planned downtime </li>
-                      <li>Unplanned downtime </li>
-                      <li>Dynamic resource Allocation (Compute, Network and Storage) </li>
-                      <li>Non-Disruptive resource addition </li>
+                      <li>HCI solution support for Planned downtime </li>
+                      <li>HCI solution support for Unplanned downtime </li>
+                      <li>HCI solution support for Dynamic resource Allocation (Compute, Network and Storage) </li>
+                      <li>HCI solution support for Non-Disruptive resource addition </li>
                   </ol> 
 
               </mat-card>  
