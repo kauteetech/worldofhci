@@ -19,7 +19,7 @@ hcifunction = [
                         "Analysts Data": 6,
                         "Customer Adoption": 1,
                         "Software Defined Data Center":4,
-                        "Software Defined Storage":16,
+                        "Software Defined Storage":17,
                         "Software Defined Network":5,
                         "Software Defined Compute":4,
                         "Software Defined Security":0,
